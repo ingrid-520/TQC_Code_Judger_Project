@@ -1,3 +1,0 @@
-What is Python?
-Python is a programming language.
-Python is a popular language.
