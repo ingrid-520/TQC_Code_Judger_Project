@@ -42,7 +42,7 @@ JSON
 
 - **Welcome Banner**: 滿版寬度，漸層背景（淺藍/白），顯示「TQC Python 練習系統」。
 - **Folder Grid**:
-    - 5x2 網格顯示 9 個大類別。
+    - 10x1 網格顯示 9 個大類別。
     - **Folder Layer 邏輯**：點擊大類別後，下方平滑展開（Accordion）或切換顯示 1-1 到 1-10 的題目按鈕。
     - **Instruction 按鈕**：右下角獨立按鈕，點擊跳出 Modal 說明考試規則。
 
