@@ -1,9 +1,0 @@
-# TODO
-
-
-
-
-"""
-Prime
-Not Prime
-"""
