@@ -1,0 +1,3 @@
+num = eval(input())
+
+# TODO
