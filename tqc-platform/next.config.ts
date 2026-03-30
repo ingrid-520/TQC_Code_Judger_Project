@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/TQC_Code_Judger_Project",
   images: {
     unoptimized: true,
   },
