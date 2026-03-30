@@ -2,6 +2,8 @@
 
 > 一個在瀏覽器端執行 Python 的 TQC+ 程式語言 Python 練習平台，無需安裝任何環境，開箱即用。
 
+👉 **[Live Demo 免費體驗連結](https://ingrid-520.github.io/TQC_Code_Judger_Project/)**
+
 ---
 
 ## 功能特色
@@ -110,12 +112,19 @@ npm run dev
 
 開啟瀏覽器前往 [http://localhost:3000](http://localhost:3000)
 
-### 建置正式版
+### 建置正式版 (Local)
 
 ```bash
 npm run build
 npm run start
 ```
+
+### GitHub Pages 自動部署
+
+本專案已設定好 GitHub Actions (`.github/workflows/nextjs.yml`)，並且於 `next.config.ts` 開啟 `output: "export"` 及 `basePath` 設定。
+
+只要將程式碼推送到 `main` 分支，GitHub 就會自動執行建置並發布到 GitHub Pages。
+**請務必確認** 該專案在 GitHub 的 **Settings > Pages > Build and deployment** 中，Source 設定為 **"GitHub Actions"**。
 
 ---
 
