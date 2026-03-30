@@ -8,6 +8,16 @@ interface PracticePageProps {
   params: Promise<{ questionId: string }>;
 }
 
+export async function generateStaticParams() {
+  const filePath = path.join(process.cwd(), "public", "data", "tqc_questions.json");
+  const raw = await fs.readFile(filePath, "utf-8");
+  const questions: Question[] = JSON.parse(raw);
+
+  return questions.map((q) => ({
+    questionId: q.id,
+  }));
+}
+
 export default async function PracticePage({ params }: PracticePageProps) {
   const { questionId } = await params;
 
