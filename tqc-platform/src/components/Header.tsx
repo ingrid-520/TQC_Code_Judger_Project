@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/logo.png";
 import { BookOpen } from "lucide-react";
 
 export default function Header() {
@@ -11,7 +12,7 @@ export default function Header() {
         <div className="flex h-14 items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="flex items-center justify-center w-8 h-8 bg-transparent">
-              <Image src="/logo.png" alt="TQC Logo" width={32} height={32} unoptimized className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform" />
+              <Image src={logo} alt="TQC Logo" width={32} height={32} unoptimized className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform" />
             </div>
             <span className="font-semibold text-foreground text-sm tracking-tight">
               TQC Python 練習系統

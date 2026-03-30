@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/logo.png";
 import Editor from "@monaco-editor/react";
 import { Question, Category } from "@/types/question";
 import { Play, FileCode2, Loader2, List, FileText, X } from "lucide-react";
@@ -178,7 +179,7 @@ sys.stdout = StringIO()
         {/* 左欄：Logo + Question List */}
         <div className="flex items-center gap-1">
           <Link href="/" title="回到首頁" className="flex items-center justify-center w-8 h-8 hover:bg-slate-100 rounded-md transition-colors mr-1">
-            <Image src="/logo.png" alt="Logo" width={20} height={20} unoptimized className="w-5 h-5 object-contain" />
+            <Image src={logo} alt="Logo" width={20} height={20} unoptimized className="w-5 h-5 object-contain" />
           </Link>
 
           <div className="w-px h-5 bg-slate-300 mx-1"></div>
